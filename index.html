@@ -45,7 +45,7 @@
       display: none;
       position: absolute;
       background-color: white;
-      min-width: 200px;
+      min-width: 220px;
       z-index: 1;
       box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
     }
@@ -109,6 +109,7 @@
   <div class="dropdown">
     <button class="dropbtn">Projects</button>
     <div class="dropdown-content">
+      <a href="#bat-speed-report">Bat Speed Report</a>
       <a href="#injury">Injury Model</a>
       <a href="#sabr">SABR Pitch Decay</a>
       <a href="#diamond">Reliever Metrics</a>
@@ -131,114 +132,125 @@
   </div>
 </nav>
 
-<body>
+<main>
 
-    <h1>Andrew Possi</h1>
-    <p>
-        I'm a data analyst with a background in finance and sports analytics. I earned my Bachelor's in Finance from UMass Dartmouth, 
-        and I'm currently completing my Master of Science in Business Analytics at Tulane University. My tools include R, Python, SQL, Tableau, and Excel, 
-        which I use to solve real-world problems and tell compelling stories through data.
-    </p>
-    <p>
-        I've worked with the Tampa Bay Rays and Tulane Baseball, and I’ve built projects in predictive modeling, injury risk analytics, 
-        player performance forecasting, credit risk evaluation, and player evaluation. Below are a few of my favorite projects.
-    </p>
-
-    <h2>📊 Project Portfolio</h2>
-
-  <div class="project">
-    <h3>⚾ 2025 Interactive Bat Speed Report</h3>
-    <p>
-        This report provides an in-depth evaluation analyzes how important average bat speed is for Major League Baseball hitters and whether it influences overall offensive success. 
-        Data has been cleaned and formatted for browser-based analysis and includes interactive charts for deeper exploration.
-    </p>
-    <iframe src="full_bat_speed_report_interactive_FINAL_CLEANED.html" 
-            width="100%" 
-            height="700" 
-            style="border:1px solid #ccc; border-radius: 8px;"
-            title="Bat Speed Report">
-    </iframe>
-</div>
-  
-    <div class="project">
-        <h3>🏈 2025 Fantasy Football Injury Case Study (PMG Model)</h3>
-        <p>
-            This project introduces a new stat: Projected Missed Games (PMG), which estimates injury risk based on prior history, volume, and positional contact. 
-            It's designed to inform fantasy football draft decisions. Uses Mike Clay's 2025 Projections for future data and statistics from the 2024 season.
-        </p>
-        <ul>
-            <li><a href="2025%20Fantasy%20Football%20Injury%20Case%20Study.pdf" target="_blank">📄 View Full PDF</a></li>
-        </ul>
-    </div>
-
-    <div class="project">
-        <h3>⚾ SABR 2025 Pitch Decay Presentation</h3>
-        <p>
-            Presented at the SABR Analytics Conference, this project explores how pitch decay (loss of effectiveness as a pitch is repeated to a batter throughout the game) impacts starting pitchers. 
-            Uses Statcast data and game outcomes to suggest new approaches to in-game management.
-        </p>
-        <ul>
-            <li><a href="SABR%202025%20Presentation%20(1).pdf" target="_blank">📄 View Full PDF</a></li>
-        </ul>
-    </div>
-
-    <div class="project">
-        <h3>📈 Diamond Dollars: Reliever Metrics Innovation</h3>
-        <p>
-            Built new metrics — Save Score and Reliever Impact Score — to evaluate MLB relievers more effectively than traditional stats. 
-            Project uses Statcast data and regression modeling to forecast impact.
-        </p>
-        <ul>
-            <li><a href="Diamond%20Dollars%20Presentation%20(1).pdf" target="_blank">📄 View Full PDF</a></li>
-        </ul>
-    </div>
-
-    <section id="xwoba-vs-woba" class="project">
-    <h2>📊 2024 Tulane Fall xwOBA vs wOBA Report</h2>
-    <p>
-        This scatter plot compares <strong>xwOBA (expected weighted on-base average)</strong> to actual <strong>wOBA</strong> for Tulane Baseball players during Fall 2024.
-        The goal was to identify hitters who may be underperforming or overperforming based on quality of contact. 
-        Players significantly above the trend line may be getting lucky; players below it may be due for positive regression.
-    </p>
-    <img src="Screenshot%202024-11-24%20171631.png" alt="2024 Tulane Fall xwOBA vs wOBA Scatterplot" style="max-width:100%; height:auto; border:1px solid #ccc; margin: 10px 0;">
+<section id="about" class="project">
+  <h2>About</h2>
+  <p>
+    I'm a data analyst with a background in finance and sports analytics. I earned my Bachelor's in Finance from UMass Dartmouth, 
+    and I'm currently completing my Master of Science in Business Analytics at Tulane University. My tools include R, Python, SQL, Tableau, and Excel, 
+    which I use to solve real-world problems and tell compelling stories through data.
+  </p>
+  <p>
+    I've worked with the Tampa Bay Rays and Tulane Baseball, and I’ve built projects in predictive modeling, injury risk analytics, 
+    player performance forecasting, credit risk evaluation, and player evaluation. Below are a few of my favorite projects.
+  </p>
 </section>
-    
-    <div class="project">
-        <h3>🏦 Crescent Bank Credit Risk Modeling</h3>
-        <p>
-            Analyzed auto loan data for subprime borrowers and developed a classification model to predict defaults within 180 days. 
-            Used Random Forest, XGBoost, and Decision Trees with AUC-based evaluation.
-        </p>
-        <ul>
-            <li><a href="Crescent%20Bank%204_18.pdf" target="_blank">📄 View Full PDF</a></li>
-        </ul>
-    </div>
 
-    <div class="resume">
-        <h2>📄 Resume</h2>
-        <p>
-            View my complete academic and professional background:
-            <br>
-            <a href="Andrew_Possi_TU_Resume.pdf" target="_blank">📄 Download My Resume (PDF)</a>
-        </p>
-    </div>
-
-    <section id="spotlight" class="project">
-    <h2>🎓 Tulane 2025 Graduation Spotlight</h2>
-    <p>
-        Tulane University's Freeman School of Business featured me in their 2025 graduation spotlight. I shared my experience as an MS student 
-        concentrating in Business Analytics, my role with the Tampa Bay Rays, and the importance of leadership and self-advocacy during my academic journey.
-    </p>
-    <p>
-        <a href="Andrew%20Possi%20MBA%2025%20Graduation%20Spotlight.pdf" target="_blank">📄 Read the Spotlight Article (PDF)</a>
-    </p>
+<section id="bat-speed-report" class="project">
+  <h2>⚾ 2025 Interactive Bat Speed Report</h2>
+  <p>
+    This report provides an interactive visualization of bat speed, exit velocity, and expected outcomes across college hitters.
+    Data has been cleaned and formatted for browser-based analysis.
+  </p>
+  <ul>
+    <li><a href="full_bat_speed_report_interactive_FINAL_CLEANED.html" target="_blank">📄 View Interactive Report</a></li>
+  </ul>
 </section>
-    
-    <p>📬 Contact: <a href="mailto:awpossi11@gmail.com">awpossi11@gmail.com</a> |
-       <a href="https://linkedin.com/in/andrew-possi" target="_blank">LinkedIn</a> |
-       <a href="https://github.com/awpossi" target="_blank">GitHub</a>
-    </p>
+
+<section id="injury" class="project">
+  <h2>🏈 2025 Fantasy Football Injury Case Study (PMG Model)</h2>
+  <p>
+    This project introduces a new stat: Projected Missed Games (PMG), which estimates injury risk based on prior history, volume,
+    and positional contact. It's designed to inform fantasy football draft decisions. Uses Mike Clay's 2025 Projections for future
+    data and statistics from the 2024 season.
+  </p>
+  <ul>
+    <li><a href="2025%20Fantasy%20Football%20Injury%20Case%20Study.pdf" target="_blank">📄 View Full PDF</a></li>
+  </ul>
+</section>
+
+<section id="sabr" class="project">
+  <h2>⚾ SABR 2025 Pitch Decay Presentation</h2>
+  <p>
+    Presented at the SABR Analytics Conference, this project explores how pitch decay (loss of effectiveness as a pitch is repeated
+    to a batter throughout the game) impacts starting pitchers. Uses Statcast data and game outcomes to suggest new approaches to
+    in-game management.
+  </p>
+  <ul>
+    <li><a href="SABR%202025%20Presentation%20(1).pdf" target="_blank">📄 View Full PDF</a></li>
+  </ul>
+</section>
+
+<section id="diamond" class="project">
+  <h2>📈 Diamond Dollars: Reliever Metrics Innovation</h2>
+  <p>
+    Built new metrics — Save Score and Reliever Impact Score — to evaluate MLB relievers more effectively than traditional stats.
+    Project uses Statcast data and regression modeling to forecast impact.
+  </p>
+  <ul>
+    <li><a href="Diamond%20Dollars%20Presentation%20(1).pdf" target="_blank">📄 View Full PDF</a></li>
+  </ul>
+</section>
+
+<section id="xwoba" class="project">
+  <h2>📊 2024 Tulane Fall xwOBA vs wOBA Report</h2>
+  <p>
+    This scatter plot compares <strong>xwOBA (expected weighted on-base average)</strong> to actual <strong>wOBA</strong> for Tulane
+    Baseball players during Fall 2024. The goal was to identify hitters who may be underperforming or overperforming based on
+    quality of contact. Players significantly above the trend line may be getting lucky; players below it may be due for positive
+    regression.
+  </p>
+  <img src="Screenshot%202024-11-24%20171631.png" alt="2024 Tulane Fall xwOBA vs wOBA Scatterplot" class="responsive">
+</section>
+
+<section id="crescent" class="project">
+  <h2>🏦 Crescent Bank Credit Risk Modeling</h2>
+  <p>
+    Analyzed auto loan data for subprime borrowers and developed a classification model to predict defaults within 180 days.
+    Used Random Forest, XGBoost, and Decision Trees with AUC-based evaluation.
+  </p>
+  <ul>
+    <li><a href="Crescent%20Bank%204_18.pdf" target="_blank">📄 View Full PDF</a></li>
+  </ul>
+</section>
+
+<section id="tulane-feature" class="project">
+  <h2>🎓 Tulane 2025 Graduation Spotlight</h2>
+  <p>
+    Tulane University's Freeman School of Business featured me in their 2025 graduation spotlight. I shared my experience as an MS
+    student concentrating in Business Analytics, my role with the Tampa Bay Rays, and the importance of leadership and self-advocacy
+    during my academic journey.
+  </p>
+  <ul>
+    <li><a href="Andrew%20Possi%20MBA%2025%20Graduation%20Spotlight.pdf" target="_blank">📄 Read the Spotlight Article (PDF)</a></li>
+  </ul>
+</section>
+
+<section id="resume" class="resume">
+  <h2>📄 Resume</h2>
+  <p>
+    View my complete academic and professional background:
+  </p>
+  <ul>
+    <li><a href="Andrew_Possi_TU_Resume.pdf" target="_blank">📄 Download My Resume (PDF)</a></li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>📬 Contact</h2>
+  <p>
+    <a href="mailto:awpossi11@gmail.com">awpossi11@gmail.com</a> |
+    <a href="https://linkedin.com/in/andrew-possi" target="_blank">LinkedIn</a> |
+    <a href="https://github.com/awpossi" target="_blank">GitHub</a>
+  </p>
+</section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Andrew Possi | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
-
